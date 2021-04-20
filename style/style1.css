@@ -1,0 +1,93 @@
+HTML
+{
+    font-size: 62.5%;
+    /*62.5% de la font definie par defaut  = 16px 16px*62.5%= 1rem */
+}
+/********************tools********************/
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+a{text-decoration: none;}
+a:hover{color: orange;}
+li{list-style: none;}
+/********************tools********************/
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: Arial sans-serif;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+}
+header
+{
+    grid-area: header;
+   background-color: #204050;
+    color: #ffffff;
+    padding-left: 1rem;
+    padding-right:1rem;
+    
+    
+}
+main
+{
+    grid-area: main;
+    padding: 1rem;
+}
+footer
+{
+    grid-area: footer;
+    background-color: #204050;
+    color: #ffffff;
+}
+/****image***/
+img
+{
+    border-radius:0.5rem;
+}
+img.medium
+{
+    max-width: 29rem;
+    width: 100%;
+} 
+/***card***/
+.card
+{
+    border: 0.1rem solid #c0c0c0;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+.card-body
+{
+  padding: 1rem;  
+}
+
+.card-body > *
+{
+    margin-bottom: 0.5rem;
+}
+.price
+{
+    font-size: 2rem;
+}
+.rating
+{
+    color: #f0c040;
+    margin: 0.1rem;
+}
+
